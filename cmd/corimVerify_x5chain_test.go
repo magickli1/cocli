@@ -365,7 +365,7 @@ func Test_CorimVerifyCmd_x5chain_strict_crl_missing_issuer_fails(t *testing.T) {
 	})
 
 	err := cmd.Execute()
-	assert.ErrorContains(t, err, "unable to get certificate CRL")
+	assert.ErrorContains(t, err, "certificate CRL missing")
 }
 
 func Test_CorimVerifyCmd_x5chain_permissive_crl_skips_missing_issuer(t *testing.T) {

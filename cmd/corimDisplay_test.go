@@ -89,7 +89,7 @@ func Test_CorimDisplayCmd_invalid_signed_corim_Truncated(t *testing.T) {
 	assert.EqualError(
 		t,
 		err,
-		"error decoding CoRIM (signed or unsigned) from truncated.cbor: map item 0: could not unmarshal value: unexpected EOF",
+		"error decoding CoRIM (signed or unsigned) from truncated.cbor: malformed CBOR: unexpected EOF",
 	)
 }
 
